@@ -2,8 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>YouTube clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>
+    YouTube clone
+  </title>
   <style>
+
+      p {
+          font-family: 'Roboto Condensed', Arial, sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
     .moto {
         width: 100%;
         display: block;
@@ -16,12 +28,50 @@
 
     }
 
+    .videoTitle {
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
     .videoPreview {
         display: inline-block;
         width: 300px;
         vertical-align: top;
         margin-right: 20px;
     }
+
+    .channelPicture {
+        display: inline-block;
+        vertical-align: top;
+        width: 50px;
+    }
+
+    .videoInfo {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .profilePicture {
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    .thumbnailRow {
+        margin-bottom: 15px;
+    }
+
+    .YTberName, .views {
+        font-size: 12px;
+        color: #656565;
+    }
+
+    .YTberName {
+        margin-bottom: 5px;
+    }
+
   </style>
 </head>
 <body>
@@ -29,28 +79,47 @@
 <input class="searchbar" type="text" placeholder="Enter youtube url">
 
 <div class="videoPreview">
-  <img class="moto" src="img/25-07-05%2004-26-05%201017043.jpg">
-  <p class="videoTitle">
-    Video Title here hohoho il faut que je fasse une deuxieme ligne
-  </p>
-  <p class="YTberName">
-    Name of YTber
-  </p>
-  <p class="views">
-    Views and Age
-  </p>
+  <div class="thumbnailRow">
+    <img class="moto" src="img/25-07-05%2004-26-05%201017043.jpg">
+  </div>
+  <div>
+    <div class="channelPicture">
+      <img class="profilePicture" src="img/profile-picture/anto500fpreview.jpg">
+    </div>
+    <div class="videoInfo">
+      <p class="videoTitle">
+        Review of the first gen CBR 650 F
+      </p>
+      <p class="YTberName">
+        Name of YTber
+      </p>
+      <p class="views">
+        Views and Age
+      </p>
+    </div>
+  </div>
 </div>
+
 <div class="videoPreview">
-  <img class="moto" src="img/hq720.avif">
-  <p class="videoTitle">
-    La vie est facile
-  </p>
-  <p class="YTberName">
-    Bob Lennon
-  </p>
-  <p class="views">
-    300M views &middot; 3 days ago
-  </p>
+  <div class="thumbnailRow">
+    <img class="moto" src="img/hq720.avif">
+  </div>
+  <div>
+    <div class="channelPicture">
+      <img class="profilePicture" src="img/profile-picture/bob.jpg">
+    </div>
+    <div class="videoInfo">
+      <p class="videoTitle">
+        La vie est si facile
+      </p>
+      <p class="YTberName">
+        Fanta Bob show
+      </p>
+      <p class="views">
+        3M Views &middot; 3 days ago
+      </p>
+    </div>
+  </div>
 </div>
 
 </body>
