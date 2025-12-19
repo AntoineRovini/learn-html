@@ -1,6 +1,7 @@
 p {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 button {
@@ -16,7 +17,7 @@ button {
     border-radius: 15px;
 }
 
-.hello{
+.hello {
     font-weight: bold;
     color: #1470aa;
     font-size: 30px;
@@ -43,7 +44,7 @@ button {
 
 .buy {
     border: none;
-    color : black;
+    color: black;
     background-color: darkorange;
     height: 36px;
     width: 85px;
@@ -167,5 +168,66 @@ button {
     border: none;
     border-radius: 5px;
     width: 40%;
+    height: 34px;
+}
+
+.horizontalProfileCard {
+    width: 500px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+    background-color: rgba(80, 80, 80, 0.09);
+}
+
+.horizontalProfileImage {
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.profileImageDetail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.honrizontalProfileName {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.occupationProfile, .profileBio {
+    color: #737373;
+    margin-top: 5px;
+}
+
+
+.horizontalProfileInformations {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 60px;
+    text-align: left;
+}
+
+.horizontalButton {
+    display: inline-block;
+
+}
+
+.horizontalAddFriend {
+    margin-top: 18%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #5f5ff4;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
     height: 34px;
 }
